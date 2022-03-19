@@ -13,3 +13,12 @@
     height: 100%;
     background-color: rebeccapurple;
 }
+
+#map{
+    position: relative;
+    padding-top: 13vh;
+}
+
+body{
+    background-color: #c1c1c1;
+}

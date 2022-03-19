@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Fuel Station Machine Decision Making Part</title>
 </head>
+
 <body>
 
     <main>
@@ -17,24 +19,61 @@
             <div class="row">
                 <div class="col">
                     <div class="container" id="customerDetails">
-                        <div class="row">
-                            <div class="col mt-5">
-                                <h2 class="text-poppins text-thin">Customer Name</h2>
+                        <div class="row mt-5">
+                            <div class="col text-xl-center">
+                                <img src="./assets/images/profile icon_4102545.png" style="width: 150px;" class=""
+                                    alt="">
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col mt-3 text-xl-center">
+                                <h2 class="text-poppins text-thin">Customer Name</h2>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
                             <div class="col">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-wrapping">Telephone</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Telephone"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-wrapping">City</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="User's City"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="#" class="btn btn-primary btn-lg active w-100" role="button"
+                                    aria-pressed="true">Load</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-1">
                     <div id="dividingLine"></div>
                 </div>
                 <div class="col">
                     <!-- Put map here bro -->
-                     
+                    <div class="col">
+                        <!-- Put map here bro -->
+                        <div style="width: 600px; height: 600px">
+                            <iframe id="map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Panadura+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                <a href="https://www.gps.ie/sport-gps/">gps watches</a></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +83,7 @@
 
 
 
-<!-- 
+    <!-- 
     <h2>Name :</h2>
     <h2>Address :</h2>
     <h2>Fuel Type :</h2>
@@ -56,7 +95,7 @@
     <p id="demo"></p> -->
 
     <script>
-        var Latitude ;
+        var Latitude;
         var Longitude;
         var x = document.getElementById("demo");
 
@@ -77,4 +116,5 @@
         }
     </script>
 </body>
+
 </html>
